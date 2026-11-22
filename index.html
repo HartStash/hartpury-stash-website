@@ -94,6 +94,12 @@ nav.links a.btn{color:#0B3D2C}
 .by{display:flex;align-items:center;gap:10px;margin-top:28px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--band-muted)}
 .by svg{flex:none}
 .boxart{width:100%;max-width:420px;justify-self:center}
+@media (max-width:860px){.boxart{max-width:190px;justify-self:start;margin-top:-8px}}
+.hero-price{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-top:22px;padding:12px 16px;border:1px solid rgba(255,247,232,.22);border-radius:12px;max-width:max-content}
+.hero-price b{font-family:var(--display);font-weight:400;font-size:30px;line-height:1;color:var(--band-ink)}
+.hero-price span{color:var(--band-muted);font-size:15px}
+.hero-price em{font-style:normal;color:var(--lime);font-weight:800}
+.nofees{font-weight:600;font-size:15px;color:var(--lime)}
 .boxart svg{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 28px rgba(0,0,0,.35))}
 
 /* Sections */
@@ -192,7 +198,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
           <span class="tape two" aria-hidden="true">STASH</span>
         </h1>
         <p class="strap">Collected. Stored. Delivered. <em>No stress.</em></p>
-        <p class="lead">Summer storage for Hartpury students. Pack up your room, we pick it up, keep it safe locally over the summer and bring it back when you need it.</p>
+        <p class="lead">Summer storage for Hartpury students who are coming back next year. Pack up your room at the end of the year, we pick it up, keep it safe locally over the summer and bring it back to your new Hartpury address when you return.</p>
+        <p class="hero-price"><b>£300</b><span>for the whole summer, boxes included.</span><em>£270 if you book before 1 March.</em></p>
         <div class="ctas">
           <a class="btn btn-lime js-book" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=QRW63zQKhkCHHVQNNs8lGYLH8kpMPaBIvDCnv65JNClUNFQ3NjE4SjhFSTNSUDRITTJMNTMyVkk2Ti4u" target="_blank" rel="noopener">Book your collection</a>
           <a class="btn btn-ghost" href="#how">How it works</a>
@@ -240,11 +247,11 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
         <h2>Five steps, and you don't have to carry a thing</h2>
       </div>
       <ol class="steps">
-        <li><h3>Book online</h3><p>Fill in the 3-minute form. You get a booking ID straight away by email.</p></li>
+        <li><h3>Book online</h3><p>Fill in the 5-minute form. You get a booking ID straight away by email.</p></li>
         <li><h3>Pack up</h3><p>We drop off boxes and tape, or use your own. Write your label, like <code>HS-014-03</code>, on each item.</p></li>
         <li><h3>We collect</h3><p>We pick everything up from your room at the end of term, on the day you chose.</p></li>
         <li><h3>Stored locally</h3><p>Your stash goes into our locked steel container at Hartpury Self Storage, not a warehouse miles away.</p></li>
-        <li><h3>Delivered back</h3><p>Tell us your return date and new address, even if that's not until August. We bring it all back.</p></li>
+        <li><h3>Delivered back</h3><p>Tell us your new term-time address near Hartpury, even if you don't know it until August. We bring it all back when you return.</p></li>
       </ol>
     </div>
   </section>
@@ -256,7 +263,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
         <h2>Run by a local storage firm, not a national call centre</h2>
       </div>
       <div class="local-grid">
-        <div><h3>Kept close to campus</h3><p>Your things stay in the area all summer, so collection and return are quick and simple.</p></div>
+        <div><h3>Stored on our farm, close to campus</h3><p>Your stash stays in a locked steel container on our farm near Hartpury all summer, not in a warehouse miles away.</p></div>
+        <div><h3>We live on site</h3><p>We live on the farm where your stash is kept, and the site is covered by CCTV.</p></div>
+        <div><h3>An established storage business</h3><p>Hartpury Self Storage already looks after 41 storage containers for local customers, and every one of them is in use.</p></div>
+        <div><h3>Already part of Hartpury</h3><p>We already work closely with Hartpury University, which rents all of our farmland for agriculture.</p></div>
         <div><h3>A real person to call</h3><p>Questions about your booking? Ring or text the people who actually collect your boxes.</p></div>
         <div><h3>Every item labelled</h3><p>Each box and bag gets your booking number, so it all comes back together and nothing goes missing.</p></div>
       </div>
@@ -310,13 +320,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
           <h3>The Stash</h3>
           <p class="amount">£300<span>for the summer</span></p>
           <p class="muted">4 months, so about £75 a month, all included.</p>
+          <p class="nofees">No collection, box delivery or return delivery fees on campus.</p>
           <ul>
             <li>Up to 10 items: boxes, bags and suitcases</li>
             <li>Including up to 2 large items, like a bike and a mini fridge</li>
             <li>Boxes and tape dropped off to you</li>
-            <li>Collection from your room</li>
+            <li>Collection from your room on Hartpury campus</li>
             <li>4 months' summer storage, kept locally</li>
-            <li>Delivery back to your new address</li>
+            <li>Delivered back to your room on campus when you return</li>
           </ul>
           <a class="btn btn-lime js-book" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=QRW63zQKhkCHHVQNNs8lGYLH8kpMPaBIvDCnv65JNClUNFQ3NjE4SjhFSTNSUDRITTJMNTMyVkk2Ti4u" target="_blank" rel="noopener">Book your collection</a>
         </div>
@@ -335,11 +346,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
           <ul class="muted">
             <li>More than 2 large items</li>
             <li>More than 10 items in total: just ask</li>
+            <li>Living off campus? Collection or delivery anywhere within 10 miles, including Gloucester and Tewkesbury: £10 each way</li>
           </ul>
           <p class="muted" style="font-size:15px">Put your real numbers on the booking form and we'll confirm the total before you pay.</p>
         </div>
       </div>
-      <p class="note"><b style="color:var(--ink)">Summer self-storage nearby can cost over £450, and you still have to get your stuff there.</b> Hartpury Stash is £300 (£270 early bird), with boxes, collection and delivery included. A 10% deposit (£30, or £27 early bird) secures your collection slot, and the rest is due the week before we collect. Or pay in full when you book and save 5%: £285, or £256.50 early bird.</p>
+      <p class="note"><b style="color:var(--ink)">Summer self-storage nearby can cost over £450, and you still have to get your stuff there.</b> Hartpury Stash is £300 (£270 early bird), with boxes, plus collection and delivery on campus, included. A 10% deposit (£30, or £27 early bird) secures your collection slot, and the rest is due the week before we collect. Or pay in full when you book and save 5%: £285, or £256.50 early bird.</p>
       <p class="note" style="margin-top:8px;font-size:13px">Comparison based on a 35 sq ft drop-off self-storage unit in Gloucester for 4 months at advertised prices, checked November 2026.</p>
     </div>
   </section>
@@ -353,7 +365,15 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       <div class="faq">
         <details>
           <summary>I don't know my return address yet. Can I still book?</summary>
-          <p>Yes. Leave the return details blank when you book and let us know by August. We'll arrange a delivery slot then.</p>
+          <p>Yes. Leave the return details blank when you book and let us know by August. We'll arrange a delivery slot for when you're back.</p>
+        </details>
+        <details>
+          <summary>I live off campus. Can you still collect and deliver?</summary>
+          <p>Yes. Collection and delivery on Hartpury campus are included. For an address off campus within 10 miles of Hartpury, including Gloucester and Tewkesbury, it's £10 each way. So if we collect from halls and deliver to your new house in Gloucester, that's £10 extra. We can't collect from or deliver to addresses further away.</p>
+        </details>
+        <details>
+          <summary>Can you deliver my things to my home address for the summer?</summary>
+          <p>No. Hartpury Stash is for students who are coming back to Hartpury next year. We keep your things safe over the summer and bring them back to your new term-time address when you return. If you're graduating or not coming back, this service isn't for you.</p>
         </details>
         <details>
           <summary>Do I need to be in when you collect?</summary>
