@@ -1,189 +1,260 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hartpury Stash | Summer student storage at Hartpury</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230B3D2C'/%3E%3Crect x='8' y='22' width='48' height='20' fill='%23C4925A' transform='rotate(-4 32 32)'/%3E%3Ctext x='32' y='40' font-family='Impact,Arial Narrow,sans-serif' font-size='18' text-anchor='middle' fill='%233B2410' transform='rotate(-4 32 32)'%3EHS%3C/text%3E%3C/svg%3E">
-<meta name="theme-color" content="#0B3D2C">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hartpurystash.co.uk/">
-<meta property="og:title" content="Hartpury Stash: summer student storage">
-<meta property="og:description" content="Collected. Stored. Delivered. No stress. Local summer storage for Hartpury students, from £270.">
+<meta name="description" content="Summer storage for Hartpury students coming back next year. Collected from your room, stored on our farm near campus, returned when you're back. £300 for the summer.">
+<meta name="theme-color" content="#0E3B2C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230E3B2C'/%3E%3Crect x='8' y='22' width='48' height='20' fill='%23C4925A' transform='rotate(-4 32 32)'/%3E%3Ctext x='32' y='40' font-family='Impact,Arial Narrow,sans-serif' font-size='18' text-anchor='middle' fill='%233B2410' transform='rotate(-4 32 32)'%3EHS%3C/text%3E%3C/svg%3E">
 <link rel="canonical" href="https://hartpurystash.co.uk/">
-<meta name="description" content="Local summer storage for Hartpury students. We collect from your room, store it safely nearby and deliver it back. By Hartpury Self Storage.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hartpury Stash">
+<meta property="og:url" content="https://hartpurystash.co.uk/">
+<meta property="og:title" content="Hartpury Stash: summer storage for Hartpury students">
+<meta property="og:description" content="Collected. Stored. Delivered. No stress. We collect from your room, store it safely on our farm near campus and bring it back in September. From £270.">
+<meta property="og:image" content="https://hartpurystash.co.uk/images/site-aerial.jpg">
+<meta property="og:image:alt" content="Aerial view of the Hartpury Stash storage containers on our farm">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@600&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap">
 <style>
-/* Layout: green "van side" hero with the taped wordmark, then cream sections like the side of a box, closing on a green contact band. */
+/* Layout idea: a calm, confident one-pager. Green header and hero with a large real-photo slot,
+   then light sections with one strong element each. The shipping-label motif is the single bold flourish. */
 :root{
-  --bg:#FFF7E8; --surface:#FFFFFF; --kraft:#F3E3C6;
-  --ink:#0B3D2C; --muted:#4D6157; --line:rgba(11,61,44,.16);
-  --green:#0B3D2C; --band:#0B3D2C; --band-ink:#FFF7E8; --band-muted:#C9D8CF;
-  --lime:#C6F135; --tape:#C4925A; --tape-dark:#8E6234; --no:#A8442C;
+  --paper:#F7F3EA;      /* page background */
+  --white:#FFFFFF;      /* cards */
+  --forest:#0E3B2C;     /* brand green, text and bands */
+  --forest-2:#164B39;   /* raised green */
+  --moss:#5E7268;       /* secondary text */
+  --rule:#DCD5C6;       /* hairlines */
+  --kraft:#C4925A;      /* tape */
+  --lime:#C6F135;       /* accent, used sparingly */
   --display:"Anton","Impact","Arial Narrow",sans-serif;
   --body:"Bricolage Grotesque",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
-  --max:1120px;
+  --max:1140px;
+  color-scheme:light;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#06261B; --surface:#0D3426; --kraft:#123B2C;
-  --ink:#FFF7E8; --muted:#B7C8BE; --line:rgba(255,247,232,.15);
-  --band:#0B3D2C; --band-ink:#FFF7E8; --band-muted:#C9D8CF; --no:#F0A28C;
-  color-scheme:dark }}
-:root[data-theme="dark"]{
-  --bg:#06261B; --surface:#0D3426; --kraft:#123B2C;
-  --ink:#FFF7E8; --muted:#B7C8BE; --line:rgba(255,247,232,.15);
-  --band:#0B3D2C; --band-ink:#FFF7E8; --band-muted:#C9D8CF; --no:#F0A28C;
-  color-scheme:dark }
-
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--forest);font-family:var(--body);font-size:17px;line-height:1.6}
+img{max-width:100%}
 a{color:inherit}
-.wrap{max-width:var(--max);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-h1,h2,h3{text-wrap:balance;margin:0;line-height:1.1}
-h2{font-family:var(--body);font-weight:800;font-size:clamp(28px,4vw,40px);letter-spacing:-.01em}
-h3{font-weight:800;font-size:19px}
+h1,h2,h3{margin:0;line-height:1.08;text-wrap:balance;font-weight:800;letter-spacing:-.015em}
 p{margin:0}
-.eyebrow{font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.lead{font-size:clamp(17px,2vw,19px);color:var(--muted);max-width:60ch}
-:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 max(20px,4vw)}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:6px}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--moss)}
+.sec{padding:96px 0}
+@media (max-width:700px){.sec{padding:64px 0}}
+.sec-head{display:grid;gap:14px;max-width:640px;margin-bottom:48px}
+.sec-head h2{font-size:clamp(30px,4.2vw,46px)}
+.sec-head p{color:var(--moss);font-size:18px}
 
 /* Buttons */
-.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--body);font-weight:800;font-size:17px;text-decoration:none;padding:14px 24px;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:transform .15s ease, background .15s ease}
-.btn:hover{transform:translateY(-2px)}
-.btn-lime{background:var(--lime);color:#0B3D2C}
-.btn-ghost{border-color:currentColor;color:var(--band-ink);background:transparent}
-.btn-sm{padding:9px 18px;font-size:15px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:700;font-size:17px;text-decoration:none;border:2px solid transparent;transition:transform .15s ease,background-color .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-lime{background:var(--lime);color:var(--forest)}
+.btn-line{border-color:rgba(247,243,234,.4);color:var(--paper)}
+.btn-line:hover{border-color:var(--paper)}
+.btn-dark{background:var(--forest);color:var(--paper)}
+.btn svg{width:18px;height:18px}
 
 /* Header */
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--band)}
-header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--band);color:var(--band-ink);border-bottom:1px solid rgba(255,247,232,.1)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
-.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1}
-.brand b{font-family:var(--display);font-weight:400;font-size:24px;letter-spacing:.03em}
-.brand small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--band-muted);margin-top:4px}
-nav.links{display:flex;gap:22px;align-items:center}
-nav.links a{text-decoration:none;font-weight:600;font-size:15px;color:var(--band-muted)}
-nav.links a:hover{color:var(--band-ink)}
-nav.links a.btn{color:#0B3D2C}
-@media (max-width:760px){nav.links a:not(.btn){display:none}}
+.top{background:var(--forest);color:var(--paper);position:sticky;top:0;z-index:10}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-tape{font-family:var(--display);font-size:22px;letter-spacing:.04em;color:#3B2410;background:var(--kraft);padding:2px 10px 1px;transform:rotate(-2deg);clip-path:polygon(0 6%,3% 0,100% 0,98% 50%,100% 100%,4% 100%,0 94%,2% 50%)}
+.logo-by{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#B9CBC1;line-height:1.3;white-space:nowrap}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{font-weight:500;font-size:15px;text-decoration:none;color:#D5E1DA}
+.nav a:hover{color:var(--paper)}
+.nav .btn{min-height:42px;padding:0 20px;font-size:15px;color:var(--forest)}
+@media (max-width:820px){.nav a:not(.btn){display:none}}
+@media (max-width:520px){.logo{flex-direction:column;align-items:flex-start;gap:4px}.logo-by{font-size:10px}.logo-tape{font-size:19px}}
 
 /* Hero */
-.hero{background:var(--band);color:var(--band-ink);overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-block:56px 72px}
-@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-block:40px 56px}}
-.pill{display:inline-block;background:var(--lime);color:#0B3D2C;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
-.tapes{position:relative;margin:28px 0 26px;display:flex;flex-direction:column;align-items:flex-start;gap:0}
-.tape{position:relative;display:inline-block;font-family:var(--display);font-weight:400;color:#3B2410;
-  font-size:clamp(56px,11vw,118px);line-height:1;letter-spacing:.02em;padding:.08em .32em .1em;
-  background:
-    linear-gradient(180deg,rgba(255,255,255,.28),rgba(255,255,255,0) 35%,rgba(0,0,0,.06) 70%,rgba(255,255,255,.12)),
-    repeating-linear-gradient(90deg,rgba(0,0,0,.035) 0 2px,transparent 2px 7px),
-    var(--tape);
-  clip-path:polygon(0 4%,2% 0,4% 5%,6% 0,100% 0,98% 50%,100% 100%,5% 100%,3% 95%,1% 100%,0 96%,2% 50%);
-  box-shadow:0 6px 18px rgba(0,0,0,.25)}
-.tape.one{transform:rotate(-2.2deg);margin-left:-6px}
-.tape.two{transform:rotate(1.6deg);margin-top:-.14em;margin-left:clamp(30px,7vw,90px)}
-.strap{font-weight:800;font-size:clamp(20px,2.8vw,28px);letter-spacing:.02em;text-transform:uppercase;line-height:1.25}
-.strap em{font-style:normal;color:var(--lime)}
-.hero .lead{color:var(--band-muted);margin-top:14px}
-.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.by{display:flex;align-items:center;gap:10px;margin-top:28px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--band-muted)}
-.by svg{flex:none}
-.boxart{width:100%;max-width:420px;justify-self:center}
-@media (max-width:860px){.boxart{max-width:190px;justify-self:start;margin-top:-8px}}
-.hero-price{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-top:22px;padding:12px 16px;border:1px solid rgba(255,247,232,.22);border-radius:12px;max-width:max-content}
-.hero-price b{font-family:var(--display);font-weight:400;font-size:30px;line-height:1;color:var(--band-ink)}
-.hero-price span{color:var(--band-muted);font-size:15px}
-.hero-price em{font-style:normal;color:var(--lime);font-weight:800}
-.nofees{font-weight:600;font-size:15px;color:var(--lime)}
-.boxart svg{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 28px rgba(0,0,0,.35))}
+.hero{background:var(--forest);color:var(--paper);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-top:72px;padding-bottom:88px}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:40px;padding-top:44px;padding-bottom:56px}}
+.hero h1{font-size:clamp(40px,5.6vw,66px);letter-spacing:-.025em}
+.hero h1 span{color:var(--lime)}
+.hero .sub{margin-top:22px;font-size:clamp(17px,1.6vw,20px);color:#C9D8CF;max-width:52ch}
+.price-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 18px;margin-top:30px}
+.price-line .big{font-family:var(--display);font-size:56px;line-height:1;letter-spacing:.01em}
+.price-line .what{color:#C9D8CF;font-size:16px}
+.price-line .eb{width:100%;font-weight:700;color:var(--lime);font-size:16px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 
-/* Sections */
-section.block{padding-block:80px}
-@media (max-width:600px){section.block{padding-block:56px}}
-.head{display:flex;flex-direction:column;gap:12px;margin-bottom:40px}
+/* Photo slots */
+.photo{position:relative;border-radius:18px;overflow:hidden;background:
+  repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 14px,transparent 14px 28px),var(--forest-2);
+  border:1px solid rgba(247,243,234,.12);display:grid;place-items:center;text-align:center}
+.photo .ph{display:grid;gap:10px;justify-items:center;color:#9FB6AA;font-size:14px;padding:24px;max-width:30ch}
+.photo .ph svg{width:34px;height:34px;opacity:.8}
+.photo .ph b{color:#D5E1DA;font-weight:700;font-size:15px}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hero .photo{aspect-ratio:4/3.9;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.hero .photo img{object-position:45% 60%}
+@media (max-width:900px){.hero .photo{aspect-ratio:4/3}}
+.about-photos{display:grid;grid-template-columns:1.6fr 1fr;gap:16px;align-items:end}
+.about-photos .tall{aspect-ratio:3/4}
+.about-photos .short{aspect-ratio:3/3.4}
+.about-photos .tall img{object-position:8% 55%}
+.about-photos .short img{object-position:40% 70%}
+
+/* The label: the one bold flourish */
+.hero-visual{position:relative}
+.label{position:absolute;left:-26px;bottom:-22px;width:min(200px,56%);background:#FFFCF3;color:var(--forest);border-radius:6px;box-shadow:0 18px 40px rgba(0,0,0,.35);transform:rotate(-3deg);overflow:hidden;text-align:left}
+.label .lh{background:var(--forest);color:var(--lime);font-family:var(--display);letter-spacing:.08em;font-size:13px;padding:6px 14px}
+.label .lb{padding:10px 14px 12px;display:grid;gap:2px}
+.label .id{font-family:var(--display);font-size:28px;line-height:1.05;letter-spacing:.02em}
+.label .meta{font-size:13px;color:var(--moss)}
+.label .bars{height:22px;margin-top:6px;background:repeating-linear-gradient(90deg,var(--forest) 0 2px,transparent 2px 4px,var(--forest) 4px 5px,transparent 5px 8px,var(--forest) 8px 11px,transparent 11px 13px)}
+@media (max-width:900px){.label{left:12px;bottom:-18px}}
+
+/* Trust strip */
+.trust{background:var(--white);border-bottom:1px solid var(--rule)}
+.trust ul{list-style:none;margin:0;padding:28px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media (max-width:900px){.trust ul{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.trust ul{grid-template-columns:1fr}}
+.trust li{display:flex;gap:14px;align-items:flex-start}
+.trust svg{flex:none;width:28px;height:28px;color:var(--forest)}
+.trust b{display:block;font-size:16px;line-height:1.3}
+.trust span{font-size:14px;color:var(--moss);line-height:1.4}
 
 /* Steps */
-.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:step}
-@media (max-width:980px){.steps{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:540px){.steps{grid-template-columns:1fr}}
-.steps li{counter-increment:step;display:flex;flex-direction:column;gap:10px;padding:22px 20px;border-top:3px solid var(--ink);min-width:0}
-.steps li::before{content:counter(step);font-family:var(--display);font-size:44px;line-height:1;color:var(--tape)}
-.steps p{color:var(--muted);font-size:16px}
-.steps code{font-family:var(--body);font-weight:800;background:var(--lime);color:#0B3D2C;padding:1px 6px;border-radius:4px;white-space:nowrap}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.steps li{counter-increment:s;display:grid;gap:12px;align-content:start;padding-top:22px;border-top:2px solid var(--forest)}
+.steps .n{display:flex;align-items:center;justify-content:space-between}
+.steps .n::before{content:counter(s,decimal-leading-zero);font-family:var(--display);font-size:20px;letter-spacing:.06em;color:var(--kraft)}
+.steps svg{width:30px;height:30px}
+.steps h3{font-size:21px}
+.steps p{color:var(--moss);font-size:16px}
+.steps code{font-family:var(--body);font-weight:700;background:#EEF7CF;padding:1px 6px;border-radius:4px;white-space:nowrap}
 
-/* Local */
-.local{background:var(--kraft)}
-.local-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-@media (max-width:860px){.local-grid{grid-template-columns:1fr}}
-.local-grid div{display:flex;flex-direction:column;gap:8px;min-width:0}
-.local-grid p{color:var(--muted)}
+/* Pricing */
+.pricing{background:var(--white);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+@media (max-width:900px){.price-grid{grid-template-columns:1fr}}
+.plan{background:var(--forest);color:var(--paper);border-radius:20px;padding:36px;display:grid;gap:22px}
+.plan-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.plan h3{font-size:24px}
+.badge{display:inline-block;background:var(--lime);color:var(--forest);font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.amounts{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+.amounts .big{font-family:var(--display);font-size:76px;line-height:.95}
+.amounts .alt{font-size:16px;color:#C9D8CF}
+.amounts .alt b{color:var(--lime);font-size:20px}
+.ticks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ticks li{display:flex;gap:12px;align-items:flex-start}
+.ticks svg{flex:none;width:20px;height:20px;margin-top:3px;color:var(--lime)}
+.plan .small{font-size:14px;color:#B9CBC1}
+.side{display:grid;gap:28px}
+.tbl-card h3{font-size:20px;margin-bottom:14px}
+table{width:100%;border-collapse:collapse;font-size:16px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:13px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--moss);font-weight:700}
+td.r,th.r{text-align:right;padding-left:16px;white-space:nowrap}
+td small{display:block;color:var(--moss);font-size:14px}
+.compare{margin-top:36px;display:flex;gap:16px;align-items:flex-start;background:var(--paper);border-radius:14px;padding:20px 22px;font-size:16px}
+.compare svg{flex:none;width:24px;height:24px;margin-top:2px}
+.compare small{display:block;color:var(--moss);font-size:13px;margin-top:6px}
 
 /* Store */
-.store-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-@media (max-width:760px){.store-grid{grid-template-columns:1fr}}
-.list{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;min-width:0}
-.list h3{display:flex;align-items:center;gap:10px;margin-bottom:14px}
-.list ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.list li{display:flex;gap:10px;align-items:baseline}
-.list li::before{content:"";flex:none;width:9px;height:9px;border-radius:50%;background:var(--lime);border:2px solid var(--ink);transform:translateY(-1px)}
-.list.no li::before{background:transparent;border-color:var(--no);border-radius:2px}
-.list.no h3{color:var(--no)}
-.list small{color:var(--muted);font-size:14px}
-.store-note{margin-top:18px;font-size:15px;color:var(--muted);max-width:70ch}
+.store{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media (max-width:760px){.store{grid-template-columns:1fr}}
+.store-col h3{font-size:20px;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.store-col h3 svg{width:22px;height:22px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--white);border:1px solid var(--rule);border-radius:999px;padding:7px 14px;font-size:15px}
+.chips.no .chip{background:transparent;color:#7A3B2A;border-color:#E6C7BC}
+.store-note{margin-top:28px;color:var(--moss);font-size:15px;max-width:70ch}
 
-/* Prices */
-.price-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:20px;align-items:start}
-@media (max-width:900px){.price-grid{grid-template-columns:1fr}}
-.price{border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column;gap:14px;background:var(--surface);min-width:0}
-.price.main{background:var(--band);color:var(--band-ink);border-color:transparent}
-.price.main .muted{color:var(--band-muted)}
-.amount{font-family:var(--display);font-size:52px;line-height:1;letter-spacing:.01em}
-.amount span{font-family:var(--body);font-size:15px;font-weight:600;letter-spacing:0;margin-left:6px;opacity:.75}
-.price ul{margin:0;padding-left:18px;display:grid;gap:6px}
-.muted{color:var(--muted)}
-.note{margin-top:22px;font-size:15px;color:var(--muted);max-width:70ch}
+/* About */
+.about{background:var(--forest);color:var(--paper)}
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+@media (max-width:900px){.about .wrap{grid-template-columns:1fr;gap:36px}}
+.about .kicker{color:#9FB6AA}
+.about h2{font-size:clamp(30px,4vw,44px);margin:14px 0 20px}
+.about p{color:#C9D8CF;font-size:18px;max-width:56ch}
+.about p+p{margin-top:16px}
+.facts{display:flex;flex-wrap:wrap;gap:24px 32px;margin-top:32px}
+.facts div{max-width:150px}
+.facts div{display:grid}
+.facts b{font-family:var(--display);font-size:44px;line-height:1;color:var(--paper);font-weight:400}
+.facts span{font-size:14px;color:#9FB6AA}
 
 /* FAQ */
-.faq{display:grid;gap:12px;max-width:820px}
-.faq details{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:0 22px}
-.faq summary{cursor:pointer;list-style:none;font-weight:800;font-size:18px;padding:18px 0;display:flex;justify-content:space-between;gap:16px}
+.faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+@media (max-width:900px){.faq-wrap{grid-template-columns:1fr;gap:28px}}
+.faq-wrap .sec-head{margin-bottom:0}
+.faq{border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--rule)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:20px 0;font-weight:700;font-size:18px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-family:var(--display);font-size:24px;line-height:1;color:var(--tape);transition:transform .2s}
-.faq details[open] summary::after{transform:rotate(45deg)}
-.faq details p{padding-bottom:20px;color:var(--muted)}
+.faq summary::after{content:"";flex:none;width:12px;height:12px;margin-top:7px;border-right:2px solid var(--forest);border-bottom:2px solid var(--forest);transform:rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(225deg);margin-top:12px}
+.faq details p{padding:0 0 22px;color:var(--moss);max-width:62ch}
 
-/* Contact */
-.contact{background:var(--band);color:var(--band-ink)}
-.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding-block:80px;align-items:center}
-@media (max-width:860px){.contact .wrap{grid-template-columns:1fr;padding-block:56px}}
-.contact .lead{color:var(--band-muted);margin-top:14px}
-.cards{display:grid;gap:12px}
-.card{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:rgba(255,247,232,.06);border:1px solid rgba(255,247,232,.14);border-radius:12px;padding:16px 18px}
-.card .k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--band-muted)}
-.card .v{font-weight:800;font-size:19px;word-break:break-word;user-select:all}
-.copy{font-family:var(--body);font-weight:600;font-size:14px;background:transparent;color:var(--band-ink);border:1px solid rgba(255,247,232,.35);border-radius:999px;padding:6px 14px;cursor:pointer}
-.copy:hover{background:rgba(255,247,232,.1)}
+/* Final CTA + contact */
+.final{padding:0 0 96px}
+.final-card{background:var(--white);border:1px solid var(--rule);border-radius:22px;padding:44px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+@media (max-width:900px){.final-card{grid-template-columns:1fr;padding:30px}}
+.final-card h2{font-size:clamp(28px,3.6vw,40px)}
+.final-card p{color:var(--moss);margin-top:12px}
+.final-card .ctas{margin-top:24px}
+.contact{display:grid;gap:12px}
+.contact a{display:flex;align-items:center;gap:14px;text-decoration:none;padding:16px 18px;border:1px solid var(--rule);border-radius:14px;background:var(--paper)}
+.contact a:hover{border-color:var(--forest)}
+.contact svg{flex:none;width:22px;height:22px}
+.contact small{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--moss)}
+.contact b{font-size:17px;word-break:break-word}
 
-footer{background:var(--band);color:var(--band-muted);border-top:1px solid rgba(255,247,232,.1);font-size:14px}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:22px}
+footer{background:var(--forest);color:#B9CBC1;font-size:14px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;padding-top:48px;padding-bottom:40px}
+@media (max-width:760px){footer .wrap{grid-template-columns:1fr}}
+footer h4{margin:0 0 12px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--paper)}
+footer p{line-height:1.7}
+footer a{color:#D5E1DA;text-decoration:none}
+footer a:hover{text-decoration:underline}
+.todo{color:var(--lime)}
+.legal{border-top:1px solid rgba(247,243,234,.12)}
+.legal .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:18px;padding-bottom:22px;grid-template-columns:none}
+.hero .hero-title{grid-column:1/-1;font-size:clamp(38px,4.3vw,60px);letter-spacing:-.03em;line-height:1.02;text-wrap:wrap}
+@media (max-width:900px){.hero .hero-title{font-size:clamp(36px,9vw,48px);text-wrap:balance}}
+.hero-strap{font-weight:800;font-size:clamp(22px,2.4vw,30px);line-height:1.2;text-transform:uppercase;letter-spacing:.01em}
+.hero-strap span{color:var(--lime)}
+.hero .wrap{row-gap:40px}
+@media (max-width:900px){.hero .wrap{row-gap:24px}}
+.hero .hero-title{width:100%;text-align:center;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(24px,6.4vw,34px);line-height:1.1;padding:.38em .5em .34em;border:3px solid var(--lime);border-radius:12px;color:var(--paper);text-wrap:balance}
+@media (min-width:901px){.hero .hero-title{white-space:nowrap;font-size:40px}}
+.hero .wrap{padding-top:28px}
+@media (max-width:900px){.hero .wrap{padding-top:20px}}
+.hero .hero-title{font-family:"Oswald","Arial Narrow",sans-serif;font-weight:600;letter-spacing:.04em}
+.top .wrap{height:88px}
+.top .logo-tape{font-size:31px;padding:3px 14px 2px}
+.top .logo-by{font-size:13px}
+@media (max-width:520px){.top .wrap{height:84px}.top .logo-tape{font-size:25px}.top .logo-by{font-size:10px}}
 </style>
-
 </head>
 <body>
+
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Hartpury Stash home"><b>HARTPURY STASH</b><small>by Hartpury Self Storage</small></a>
-    <nav class="links" aria-label="Main">
+    <a class="logo" href="#top" aria-label="Hartpury Stash home">
+      <span class="logo-tape">HARTPURY STASH</span>
+      <span class="logo-by">by Hartpury Self Storage</span>
+    </a>
+    <nav class="nav" aria-label="Main">
       <a href="#how">How it works</a>
-      <a href="#store">What to store</a>
       <a href="#prices">Prices</a>
+      <a href="#about">About us</a>
       <a href="#faq">FAQ</a>
-      <a class="btn btn-lime btn-sm js-book" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=QRW63zQKhkCHHVQNNs8lGYLH8kpMPaBIvDCnv65JNClUNFQ3NjE4SjhFSTNSUDRITTJMNTMyVkk2Ti4u" target="_blank" rel="noopener">Book now</a>
+      <a class="btn btn-lime" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=QRW63zQKhkCHHVQNNs8lGYLH8kpMPaBIvDCnv65JNClUNFQ3NjE4SjhFSTNSUDRITTJMNTMyVkk2Ti4u" target="_blank" rel="noopener">Book now</a>
     </nav>
   </div>
 </header>
@@ -191,234 +262,221 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 <main id="top">
   <section class="hero">
     <div class="wrap">
+      <h1 class="hero-title">Summer storage for Hartpury students</h1>
       <div>
-        <span class="pill">Local student storage</span>
-        <h1 class="tapes" aria-label="Hartpury Stash">
-          <span class="tape one" aria-hidden="true">HARTPURY</span>
-          <span class="tape two" aria-hidden="true">STASH</span>
-        </h1>
-        <p class="strap">Collected. Stored. Delivered. <em>No stress.</em></p>
-        <p class="lead">Summer storage for Hartpury students who are coming back next year. Pack up your room at the end of the year, we pick it up, keep it safe locally over the summer and bring it back to your new Hartpury address when you return.</p>
-        <p class="hero-price"><b>£300</b><span>for the whole summer, boxes included.</span><em>£270 if you book before 1 March.</em></p>
-        <div class="ctas">
-          <a class="btn btn-lime js-book" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=QRW63zQKhkCHHVQNNs8lGYLH8kpMPaBIvDCnv65JNClUNFQ3NjE4SjhFSTNSUDRITTJMNTMyVkk2Ti4u" target="_blank" rel="noopener">Book your collection</a>
-          <a class="btn btn-ghost" href="#how">How it works</a>
+        <p class="hero-strap">Collected. Stored. Delivered. <span>No stress.</span></p>
+        <p class="sub">Pack up at the end of the year and we'll pick everything up from your room, keep it on our farm near campus, and bring it back when you return in September.</p>
+        <div class="price-line">
+          <span class="big">£300</span>
+          <span class="what">for the whole summer, boxes and tape included</span>
+          <span class="eb">£270 if you book before 1 March 2027</span>
         </div>
-        <p class="by">
-          <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><rect x="1" y="1" width="20" height="20" rx="3" fill="none" stroke="#D9B45A" stroke-width="2"/><path d="M6 5v12M16 5v12M6 11h10" stroke="#D9B45A" stroke-width="2.4" fill="none"/></svg>
-          By Hartpury Self Storage
-        </p>
+        <div class="ctas">
+          <a class="btn btn-lime" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=QRW63zQKhkCHHVQNNs8lGYLH8kpMPaBIvDCnv65JNClUNFQ3NjE4SjhFSTNSUDRITTJMNTMyVkk2Ti4u" target="_blank" rel="noopener">Book your collection
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-line" href="#how">How it works</a>
+        </div>
       </div>
-
-      <div class="boxart" aria-hidden="true">
-        <svg viewBox="0 0 400 380">
-          <!-- top -->
-          <polygon points="200,40 370,100 200,160 30,100" fill="#D9A866"/>
-          <!-- left side -->
-          <polygon points="30,100 200,160 200,350 30,290" fill="#C4925A"/>
-          <!-- right side -->
-          <polygon points="200,160 370,100 370,290 200,350" fill="#A9773F"/>
-          <!-- top seam + tape -->
-          <polygon points="114,70 286,130 286,148 114,88" fill="#E7C48E" opacity=".95"/>
-          <polygon points="114,70 130,64 302,124 286,130" fill="#F0D3A3" opacity=".9"/>
-          <!-- tape down the front -->
-          <polygon points="286,130 302,124 302,190 286,196" fill="#E7C48E" opacity=".9"/>
-          <!-- label on left side -->
-          <g transform="matrix(1,0.353,0,1,58,148)">
-            <rect x="0" y="0" width="118" height="78" rx="4" fill="#FFF7E8"/>
-            <rect x="0" y="0" width="118" height="20" rx="4" fill="#0B3D2C"/>
-            <text x="9" y="14" font-family="Anton, Impact, sans-serif" font-size="10" fill="#C6F135" letter-spacing="1">HARTPURY STASH</text>
-            <text x="9" y="47" font-family="Anton, Impact, sans-serif" font-size="25" fill="#0B3D2C">HS-014-03</text>
-            <text x="9" y="66" font-family="Bricolage Grotesque, sans-serif" font-size="10" fill="#4D6157">Box 3 · Return Sept</text>
-          </g>
-          <!-- this way up arrows on right side -->
-          <g transform="matrix(1,-0.353,0,1,300,250)" fill="none" stroke="#5C3D1E" stroke-width="4" opacity=".55">
-            <path d="M10 30V8M2 16l8-8 8 8"/><path d="M34 30V8M26 16l8-8 8 8"/>
-          </g>
-        </svg>
+      <div class="hero-visual">
+      <div class="photo">
+        <img src="images/site-aerial.jpg" alt="Aerial view of the green storage containers on our farm near Hartpury, with fields and hills behind" width="1472" height="1104">
+      </div>
+        <div class="label" aria-hidden="true">
+          <div class="lh">HARTPURY STASH</div>
+          <div class="lb">
+            <span class="id">HS-014-03</span>
+            <span class="meta">Box 3 of 8 · Back in September</span>
+            <span class="bars"></span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="block" id="how">
+  <section class="trust" aria-label="Why you can trust us">
     <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">How it works</span>
-        <h2>Five steps, and you don't have to carry a thing</h2>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="12" rx="1"/><path d="M6 7v12M10 7v12M14 7v12M18 7v12"/></svg><div><b>An established storage business</b><span>41 storage containers on our farm</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9H3z"/><path d="M9 20v-6h6v6"/></svg><div><b>We live on site</b><span>Your things are kept where we live</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7l12-3 2 6-12 3z"/><path d="M8 12l1 4h-5"/><path d="M17 8l4-1"/></svg><div><b>CCTV-covered site</b><span>Ventilated, damp-proof steel containers</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5z"/><path d="M7 10.5V16c2.5 2 7.5 2 10 0v-5.5"/></svg><div><b>Works closely with Hartpury University</b><span>Students learn about farming on our land</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">How it works</p>
+        <h2>Four steps, and you don't carry a thing</h2>
       </div>
       <ol class="steps">
-        <li><h3>Book online</h3><p>Fill in the 5-minute form. You get a booking ID straight away by email.</p></li>
-        <li><h3>Pack up</h3><p>We drop off boxes and tape, or use your own. Write your label, like <code>HS-014-03</code>, on each item.</p></li>
-        <li><h3>We collect</h3><p>We pick everything up from your room at the end of term, on the day you chose.</p></li>
-        <li><h3>Stored locally</h3><p>Your stash goes into our locked steel container at Hartpury Self Storage, not a warehouse miles away.</p></li>
-        <li><h3>Delivered back</h3><p>Tell us your new term-time address near Hartpury, even if you don't know it until August. We bring it all back when you return.</p></li>
+        <li><div class="n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></div><h3>Book online</h3><p>Fill in a 5-minute form. Your booking ID and labels arrive by email straight away.</p></li>
+        <li><div class="n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l9-4 9 4v9l-9 4-9-4z"/><path d="M3 8l9 4 9-4M12 12v9"/></svg></div><h3>Pack up</h3><p>Pick up your boxes and tape on campus on one of our box days, or from the farm. Write your label, like <code>HS-014-03</code>, on every item.</p></li>
+        <li><div class="n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h11v9H2zM13 10h4l4 3v3h-8z"/><circle cx="6" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></div><h3>We collect</h3><p>We pick it all up from your room at the end of term, on the day you chose.</p></li>
+        <li><div class="n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v5h-5"/></svg></div><h3>We bring it back</h3><p>When you're back for the new year, we deliver everything to your new Hartpury address.</p></li>
       </ol>
     </div>
   </section>
 
-  <section class="block local">
+  <section class="sec pricing" id="prices">
     <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">Why Hartpury Stash</span>
-        <h2>Run by a local storage firm, not a national call centre</h2>
-      </div>
-      <div class="local-grid">
-        <div><h3>Stored on our farm, close to campus</h3><p>Your stash stays in a locked steel container on our farm near Hartpury all summer, not in a warehouse miles away.</p></div>
-        <div><h3>We live on site</h3><p>We live on the farm where your stash is kept, and the site is covered by CCTV.</p></div>
-        <div><h3>An established storage business</h3><p>Hartpury Self Storage already looks after 41 storage containers for local customers, and every one of them is in use.</p></div>
-        <div><h3>Already part of Hartpury</h3><p>We already work closely with Hartpury University, which rents all of our farmland for agriculture.</p></div>
-        <div><h3>A real person to call</h3><p>Questions about your booking? Ring or text the people who actually collect your boxes.</p></div>
-        <div><h3>Every item labelled</h3><p>Each box and bag gets your booking number, so it all comes back together and nothing goes missing.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="store">
-    <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">What to store</span>
-        <h2>Most of your room fits. A few things can't come.</h2>
-      </div>
-      <div class="store-grid">
-        <div class="list">
-          <h3>Happy to store</h3>
-          <ul>
-            <li>Boxes of books, clothes and kitchen kit</li>
-            <li>Suitcases and holdalls</li>
-            <li>Duvets, pillows and bedding bags</li>
-            <li>Mini fridge <small>(defrosted and dry)</small></li>
-            <li>Bikes</li>
-            <li>TVs and monitors <small>(boxed or wrapped)</small></li>
-            <li>Desk chairs and clothes rails</li>
-          </ul>
-        </div>
-        <div class="list no">
-          <h3>Please don't pack</h3>
-          <ul>
-            <li>Food, including tins and snacks</li>
-            <li>Liquids, drinks and toiletries that could leak</li>
-            <li>Anything flammable, like gas canisters or aerosols</li>
-            <li>Cash, jewellery or other valuables</li>
-            <li>Plants, or anything alive or perishable</li>
-            <li>Pianos, sofas, beds, mattresses or wardrobes</li>
-            <li>Lithium batteries <small>(take e-bike and e-scooter batteries out)</small></li>
-          </ul>
-        </div>
-      </div>
-      <p class="store-note">Large items must weigh no more than 25 kg and fit within 180 × 80 × 80 cm, or fold or come apart to fit. Not sure about something? Ask us before you book.</p>
-    </div>
-  </section>
-
-  <section class="block local" id="prices">
-    <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">Prices · Summer 2027</span>
-        <h2>One simple stash price, with extras if you need them</h2>
+      <div class="sec-head">
+        <p class="kicker">Prices for summer 2027</p>
+        <h2>One price for the summer. No hidden fees.</h2>
       </div>
       <div class="price-grid">
-        <div class="price main">
-          <h3>The Stash</h3>
-          <p class="amount">£300<span>for the summer</span></p>
-          <p class="muted">4 months, so about £75 a month, all included.</p>
-          <p class="nofees">No collection, box delivery or return delivery fees on campus.</p>
-          <ul>
-            <li>Up to 10 items: boxes, bags and suitcases</li>
-            <li>Including up to 2 large items, like a bike and a mini fridge</li>
-            <li>Boxes and tape dropped off to you</li>
-            <li>Collection from your room on Hartpury campus</li>
-            <li>4 months' summer storage, kept locally</li>
-            <li>Delivered back to your room on campus when you return</li>
+        <div class="plan">
+          <div class="plan-top"><h3>The Stash</h3><span class="badge">Early bird until 1 March</span></div>
+          <div class="amounts"><span class="big">£300</span><span class="alt">or <b>£270</b> if you book<br>before 1 March 2027</span></div>
+          <ul class="ticks">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Up to 10 items: boxes, bags and suitcases</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Including up to 2 large items, like a bike or a horse saddle</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Boxes and tape included: pick them up on campus or from the farm</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Collection from your room on campus</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Four months' storage on our farm</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Delivered back to campus when you return</li>
           </ul>
-          <a class="btn btn-lime js-book" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=QRW63zQKhkCHHVQNNs8lGYLH8kpMPaBIvDCnv65JNClUNFQ3NjE4SjhFSTNSUDRITTJMNTMyVkk2Ti4u" target="_blank" rel="noopener">Book your collection</a>
+          <a class="btn btn-lime" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=QRW63zQKhkCHHVQNNs8lGYLH8kpMPaBIvDCnv65JNClUNFQ3NjE4SjhFSTNSUDRITTJMNTMyVkk2Ti4u" target="_blank" rel="noopener">Book your collection</a>
+          <p class="small">No collection fee and no return delivery fee on campus.</p>
         </div>
-        <div class="price" style="border:2px solid var(--ink)">
-          <span class="pill" style="align-self:flex-start">Early bird</span>
-          <h3>Book early, save 10%</h3>
-          <p class="amount">£270<span>for the summer</span></p>
-          <ul class="muted">
-            <li>Everything in The Stash</li>
-            <li>Book before 1 March 2027</li>
-          </ul>
-        </div>
-        <div class="price">
-          <h3>Extras</h3>
-          <p class="amount" style="font-size:34px">£20<span>per extra large item</span></p>
-          <ul class="muted">
-            <li>More than 2 large items</li>
-            <li>More than 10 items in total: just ask</li>
-            <li>Living off campus? Collection or delivery anywhere within 10 miles, including Gloucester and Tewkesbury: £10 each way</li>
-          </ul>
-          <p class="muted" style="font-size:15px">Put your real numbers on the booking form and we'll confirm the total before you pay.</p>
+        <div class="side">
+          <div class="tbl-card">
+            <h3>Extras</h3>
+            <table>
+              <tbody>
+                <tr><td>Extra large item<small>Over the 2 included</small></td><td class="r">£20 each</td></tr>
+                <tr><td>Off-campus collection or delivery<small>Within 10 miles, including Gloucester and Tewkesbury</small></td><td class="r">£10 each way</td></tr>
+                <tr><td>More than 10 items<small>Put your numbers on the form and we'll confirm the total</small></td><td class="r">Ask us</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tbl-card">
+            <h3>How to pay</h3>
+            <table>
+              <thead><tr><th>Option</th><th class="r">Standard</th><th class="r">Early bird</th></tr></thead>
+              <tbody>
+                <tr><td>Deposit when you book<small>Secures your collection slot</small></td><td class="r">£30</td><td class="r">£27</td></tr>
+                <tr><td>Balance<small>The week before we collect</small></td><td class="r">£270</td><td class="r">£243</td></tr>
+                <tr><td><b>Or pay in full and save 5%</b></td><td class="r"><b>£285</b></td><td class="r"><b>£256.50</b></td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-      <p class="note"><b style="color:var(--ink)">Summer self-storage nearby can cost over £450, and you still have to get your stuff there.</b> Hartpury Stash is £300 (£270 early bird), with boxes, plus collection and delivery on campus, included. A 10% deposit (£30, or £27 early bird) secures your collection slot, and the rest is due the week before we collect. Or pay in full when you book and save 5%: £285, or £256.50 early bird.</p>
-      <p class="note" style="margin-top:8px;font-size:13px">Comparison based on a 35 sq ft drop-off self-storage unit in Gloucester for 4 months at advertised prices, checked November 2026.</p>
+      <div class="compare">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.5"/></svg>
+        <div><b>Summer self-storage nearby can cost over £450, and you still have to get your things there yourself.</b>
+        <small>Based on a 35 sq ft drop-off self-storage unit in Gloucester for 4 months at advertised prices, checked November 2026.</small></div>
+      </div>
     </div>
   </section>
 
-  <section class="block" id="faq">
+  <section class="sec" id="store">
     <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">Questions</span>
+      <div class="sec-head">
+        <p class="kicker">What to store</p>
+        <h2>Most of your room fits</h2>
+      </div>
+      <div class="store">
+        <div class="store-col">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Happy to store</h3>
+          <div class="chips">
+            <span class="chip">Boxes of books and clothes</span><span class="chip">Kitchen kit</span><span class="chip">Suitcases and holdalls</span><span class="chip">Duvets and bedding</span><span class="chip">Mini fridge (defrosted and dry)</span><span class="chip">Bikes</span><span class="chip">Saddles and riding kit</span><span class="chip">Desks (that fit the size limit)</span><span class="chip">TVs and monitors (boxed)</span><span class="chip">Desk chairs</span><span class="chip">Clothes rails</span>
+          </div>
+        </div>
+        <div class="store-col">
+          <h3 style="color:#7A3B2A"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Please don't pack</h3>
+          <div class="chips no">
+            <span class="chip">Food</span><span class="chip">Liquids and toiletries</span><span class="chip">Aerosols and gas</span><span class="chip">Cash and valuables</span><span class="chip">Plants</span><span class="chip">Sofas, beds and mattresses</span><span class="chip">Wardrobes and pianos</span><span class="chip">Lithium batteries</span>
+          </div>
+        </div>
+      </div>
+      <p class="store-note">Large items must weigh 25 kg or less and fit within 180 × 80 × 80 cm, or fold or come apart to fit. Take batteries out of e-bikes and e-scooters. Not sure about something? Ask us before you book.</p>
+    </div>
+  </section>
+
+  <section class="sec about" id="about">
+    <div class="wrap">
+      <div class="about-photos">
+        <div class="photo tall"><img src="images/owner-containers.jpg" alt="The owner standing beside the row of storage containers on the farm" width="1200" height="1600"></div>
+        <div class="photo short"><img src="images/containers-crane.jpg" alt="A new storage container being lifted into place in the yard" width="1200" height="1600"></div>
+      </div>
+      <div>
+        <p class="kicker">About us</p>
+        <h2>A local storage business, on a working farm</h2>
+        <p>Hartpury Stash is run by Hartpury Self Storage from our farm near campus. We already look after 41 storage containers for local customers, and we live and work on the site where your things are kept, so there's always someone around. Your belongings are kept in a safe, dry environment, looked after by a trusted local community business.</p>
+        <p>We work closely with Hartpury University, who rent our farmland for growing arable crops. Their students often come out to the farm to learn about farming and get hands-on experience with machinery.</p>
+        <div class="facts">
+          <div><b>41</b><span>storage containers on site</span></div>
+          <div><b>10</b><span>miles we cover, including Gloucester</span></div>
+          <div><b>1</b><span>price for the whole summer</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq">
+    <div class="wrap faq-wrap">
+      <div class="sec-head">
+        <p class="kicker">Questions</p>
         <h2>Things students usually ask</h2>
+        <p>Something else? Call, text or email and we'll help.</p>
       </div>
       <div class="faq">
         <details>
-          <summary>I don't know my return address yet. Can I still book?</summary>
-          <p>Yes. Leave the return details blank when you book and let us know by August. We'll arrange a delivery slot for when you're back.</p>
+          <summary>What counts as an item?</summary>
+          <p>Each box, bag, suitcase or large item counts as one. Your booking covers up to 10 items, and up to 2 of them can be large items, like a bike, a horse saddle, a desk or a large desk chair.</p>
+        </details>
+        <details>
+          <summary>Will my things get damp?</summary>
+          <p>No. Your belongings are kept in a safe, dry environment in our ventilated, damp-proof storage containers, on the farm where we live and work. We're a trusted local community business, and looking after people's belongings is what we do every day.</p>
+        </details>
+        <details>
+          <summary>How do I get my boxes?</summary>
+          <p>Pick them up on campus at one of our box days in the weeks before move-out. We'll email you the dates and where to find us with your booking confirmation. Can't make it? Collect them from the farm at a time that suits you.</p>
         </details>
         <details>
           <summary>I live off campus. Can you still collect and deliver?</summary>
-          <p>Yes. Collection and delivery on Hartpury campus are included. For an address off campus within 10 miles of Hartpury, including Gloucester and Tewkesbury, it's £10 each way. So if we collect from halls and deliver to your new house in Gloucester, that's £10 extra. We can't collect from or deliver to addresses further away.</p>
+          <p>Yes. Collection and delivery on campus are included. For an address off campus within 10 miles of Hartpury, including Gloucester and Tewkesbury, it's £10 each way. So if we collect from halls and deliver to your new house in Gloucester, that's £10 extra.</p>
         </details>
         <details>
           <summary>Can you deliver my things to my home address for the summer?</summary>
-          <p>No. Hartpury Stash is for students who are coming back to Hartpury next year. We keep your things safe over the summer and bring them back to your new term-time address when you return. If you're graduating or not coming back, this service isn't for you.</p>
+          <p>No. Hartpury Stash is for students coming back to Hartpury next year. We keep your things safe over the summer and bring them back to your new term-time address when you return.</p>
+        </details>
+        <details>
+          <summary>I don't know my return address yet. Can I still book?</summary>
+          <p>Yes. Leave it blank when you book and tell us by August. We'll arrange a delivery slot for when you're back.</p>
         </details>
         <details>
           <summary>Do I need to be in when you collect?</summary>
           <p>Ideally, yes, so you can hand everything over and we can check your items against your booking. Pick a time slot that suits you when you book.</p>
         </details>
         <details>
-          <summary>How do I label my things?</summary>
-          <p>Your confirmation email has a booking sheet with a label for every item, such as HS-014-01, HS-014-02 and so on. Write one on each box, bag or large item before we arrive.</p>
-        </details>
-        <details>
-          <summary>What counts as an item?</summary>
-          <p>Each box, bag, suitcase or large item counts as one. Your booking covers up to 10 items in total, and up to 2 of them can be large items like a bike, a mini fridge or a desk chair.</p>
-        </details>
-        <details>
-          <summary>What if I have more than 10 items?</summary>
-          <p>No problem. Extra large items are £20 each. For anything else over 10 items, put your real numbers on the booking form and we'll confirm the total before you pay.</p>
-        </details>
-        <details>
           <summary>How do I pay?</summary>
-          <p>Once we've confirmed your booking, pay a 10% deposit to secure your collection slot: £30, or £27 at the early bird price. The rest is due the week before we collect, and we'll remind you of the amount. Prefer to get it done? Pay in full when you book and save 5%: £285, or £256.50 at the early bird price. We’ll email you a secure payment link with your booking confirmation.</p>
+          <p>Once we've confirmed your booking, we'll email you a secure payment link. Pay a 10% deposit to secure your slot and the rest the week before we collect, or pay in full and save 5%.</p>
         </details>
         <details>
           <summary>Can I cancel?</summary>
-          <p>Yes. Cancel within 14 days of booking and we'll refund your deposit in full. After that, the deposit (10% of your price) is non-refundable and you won't pay anything more. If you paid in full, we refund everything except that 10%.</p>
-        </details>
-        <details>
-          <summary>Can I change my booking?</summary>
-          <p>Call, text or email us with your booking ID and we'll update it for you.</p>
+          <p>Yes. Cancel within 14 days of booking for a full refund. After that, the 10% deposit is non-refundable and you won't pay anything more. If you paid in full, we refund everything except that 10%.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section class="final">
     <div class="wrap">
-      <div>
-        <span class="pill">Get in touch</span>
-        <h2 style="margin-top:18px">Questions before you book?</h2>
-        <p class="lead">Call, text or email and you'll speak to the team that collects and returns your stash.</p>
-        <div class="ctas"><a class="btn btn-lime js-book" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=QRW63zQKhkCHHVQNNs8lGYLH8kpMPaBIvDCnv65JNClUNFQ3NjE4SjhFSTNSUDRITTJMNTMyVkk2Ti4u" target="_blank" rel="noopener">Book your collection</a></div>
-      </div>
-      <div class="cards">
-        <div class="card"><div><div class="k">Call or text</div><div class="v" id="v-phone">07538 123596</div></div><button class="copy" type="button" data-copy="07538 123596" id="copy-phone">Copy</button></div>
-        <div class="card"><div><div class="k">Email</div><div class="v" id="v-email">hello@hartpurystash.co.uk</div></div><button class="copy" type="button" data-copy="hello@hartpurystash.co.uk" id="copy-email">Copy</button></div>
-        <div class="card"><div><div class="k">Facebook</div><div class="v">Hartpury Stash</div></div><a class="copy" style="text-decoration:none" href="https://www.facebook.com/profile.php?id=61596161231002" target="_blank" rel="noopener">Visit page</a></div>
+      <div class="final-card">
+        <div>
+          <h2>Book before 1 March and pay £270</h2>
+          <p>It takes five minutes, and you'll get your booking ID and labels by email straight away.</p>
+          <div class="ctas"><a class="btn btn-dark" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=QRW63zQKhkCHHVQNNs8lGYLH8kpMPaBIvDCnv65JNClUNFQ3NjE4SjhFSTNSUDRITTJMNTMyVkk2Ti4u" target="_blank" rel="noopener">Book your collection</a></div>
+        </div>
+        <div class="contact">
+          <a href="tel:07538123596"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span><small>Call or text</small><b>07538 123596</b></span></a>
+          <a href="mailto:hello@hartpurystash.co.uk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span><small>Email</small><b>hello@hartpurystash.co.uk</b></span></a>
+          <a href="https://www.facebook.com/profile.php?id=61596161231002" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2a4 4 0 0 0-4 4v3H7v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2z"/></svg><span><small>Facebook</small><b>Hartpury Stash</b></span></a>
+        </div>
       </div>
     </div>
   </section>
@@ -426,28 +484,41 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Hartpury Stash by Hartpury Self Storage</span>
-    <span>Terms &amp; conditions · Privacy</span>
+    <div>
+      <a class="logo" href="#top" aria-label="Hartpury Stash home"><span class="logo-tape">HARTPURY STASH</span></a>
+      <p style="margin-top:16px;max-width:40ch">Summer student storage by Hartpury Self Storage. Collected from your room, kept on our farm, returned when you're back.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>07538 123596<br>hello@hartpurystash.co.uk</p>
+    </div>
+    <div>
+      <h4>Information</h4>
+      <p><a href="#prices">Prices</a><br><a href="#faq">FAQ</a><br><span class="todo">Terms &amp; conditions</span><br><span class="todo">Privacy</span></p>
+    </div>
+  </div>
+  <div class="legal">
+    <div class="wrap">
+      <span>© 2026 Hartpury Stash by Hartpury Self Storage</span>
+      <span>Hartpury, Gloucestershire</span>
+    </div>
   </div>
 </footer>
 
 <script>
-  document.querySelectorAll("button.copy").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const text = btn.dataset.copy;
-      const done = () => { btn.textContent = "Copied"; setTimeout(() => btn.textContent = "Copy", 1600); };
-      const fallback = () => {
-        const v = btn.parentElement.querySelector(".v");
-        const r = document.createRange(); r.selectNodeContents(v);
-        const s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
-        btn.textContent = "Selected";
-        setTimeout(() => btn.textContent = "Copy", 1600);
-      };
-      try {
-        navigator.clipboard.writeText(text).then(done, fallback);
-      } catch (e) { fallback(); }
-    });
-  });
+/* Size the boxed headline so it fills its box on one line on larger screens */
+(function(){
+  var h=document.querySelector('.hero-title'); if(!h) return;
+  function fit(){
+    if(window.innerWidth<=900){h.style.fontSize='';return;}
+    var lo=24,hi=64; h.style.fontSize=hi+'px';
+    var cs=getComputedStyle(h), room=h.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);
+    while(hi-lo>0.5){var mid=(lo+hi)/2; h.style.fontSize=mid+'px'; var r=document.createRange(); r.selectNodeContents(h); (r.getBoundingClientRect().width<=room*0.96)?lo=mid:hi=mid;}
+    h.style.fontSize=lo+'px';
+  }
+  fit(); window.addEventListener('resize',fit);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit);
+})();
 </script>
 </body>
 </html>
